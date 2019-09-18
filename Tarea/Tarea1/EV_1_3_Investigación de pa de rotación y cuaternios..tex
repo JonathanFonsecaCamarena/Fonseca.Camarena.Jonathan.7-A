@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+
+\begin{document}
+
+\author{Fonseca Camarena Jonathan}
+
+\title{\begin{center}
+\includegraphics[scale=1.5]{Escudo.png} 
+\end{center}Par de rotación y cuaternios}
+
+\date{17 de septiembre del 2019}
+
+\maketitle
+\section{Historia}
+Los números complejos desempeñan un papel muy importante en las matemáticas. Vinculado a esto brotó la idea de generalizar más todavía los números reales. en este proceso de expansión se construyeron los cuaterniones, cuyo papel en las matemáticas resultó poco significativo.
+Los cuaterniones fueron creados por William Rowan Hamilton en 1843. Hamilton buscaba formas de extender los números complejos (que pueden interpretarse como puntos en un plano) a un número mayor de dimensiones.  No pudo hacerlo para 3 dimensiones, pero para 4 dimensiones obtuvo los cuaterniones. Según una historia relatada por el propio Hamilton, la solución al problema que le ocupaba le sobrevino un día que estaba paseando con su esposa, bajo la forma de la ecuación que inmediatamente, grabó esta expresión en el lateral del puente de Brougham, que estaba muy cerca del lugar.Hamilton popularizó los cuaterniones con varios libros, el último de los cuales, Elements of Quaternions (en inglés Elementos de Cuaterniones), tenía 800 páginas y fue publicado poco después de su muerte.
+
+\section{Cuaterniones y rotación en el espacio}
+Los cuaterniones unitarios proporcionan una notación matemática para representar las orientaciones y las rotaciones de objetos en tres dimensiones. Comparados con los ángulos de Euler, son más simples de componer y evitan el problema del bloqueo del cardán. Comparados con las matrices de rotación, son más eficientes y más estables numéricamente. Los cuarteniones son útiles en aplicaciones de gráficos por computadora, robótica, navegación y mecánica orbital de satélites.
+\section{Euler, rotaciones en $R^{3}$}
+El descubrimiento de Euler conocido como la identidad de los cuatro cuadrados, la cual dice que el producto de dos números, cada uno de los cuales es una suma de cuatro cuadrados, es, en sí, una suma de cuatro cuadrados.
+Más aun, un tratamiento estrictamente geométrico de las rotaciones en el espacio euclidiano tridimensional, lleva necesariamente, a una caraterización de las
+rotaciones en $R^{3}$ que está muy cerca del trabajo de Hamilton para representar estas rotaciones por medio de cuaternios. Este trabajo lo realizó el matemático francés Olinde Rodrigues (1795-1851) en 1840, antes del descubrimiento de los cuaternios por Hamilton en 1843.
+\\\\El enfoque de Euler es algebraico, no geométrico, y que no es constructivo. Esto es, que no provee expresiones para determinar el ángulo y eje de la rotación resultante. Sin embargo, Euler, es a menudo acreditado por la solución existencial, geométrica, y problemas constructivos concernientes a la composición de dos rotaciones.
+\\\begin{center}
+$cos\dfrac{1}{2}\phi,sin\dfrac{1}{2}\phi n_{x},sin\dfrac{1}{2}\phi n_{y},sin\dfrac{1}{2}\phi n_{z}$\\\end{center}
+La fórmula resulta algo más complicada que en el plano complejo porque trabajamos en cuatro dimensiones con los cuaterniones pero queremos permanecer en el espacio usual de tres dimensiones. Una simple multiplicación, a la izquierda o a la derecha, daría dos rotaciones simultáneas en dos planos perpendiculares (ortogonales) en el espacio cuadridimensional.
+\section{Descubriendo la fórmula}
+Tomemos el ejemplo más sencillo:\\ ¿Cómo expresar analíticamente la rotación alrededor de eje de los x,(O,i) con un ángulo de 90 grados?
+El vector i tiene que jugar un papel. Miremos a la multiplicación por i por la izquierda: ij=k como ixj=k e ik=-j como ixk=-j.
+
+La fórmula para la multiplicación que propuso Rodrigues es precisamente la regla de multiplicación de Hamilton para cuaternios. Esto nos dice que Rodrigues fue, en cierta manera, precursor de Hamilton. Uno de los resultados más importantes sobre rotaciones, el cual enunciamos a continuación, es el teorema de Euler. Este teorema nos asegura que toda rotación por un cierto ángulo en cualquier espacio deja fija una línea recta que es el eje de rotación.\\Si es R es una matriz que representa una rotación en $R^{3}$, entonces R tiene un vector propio \textbf{n} $\in R^{3}$ tal que es presisamente la matriz de rotación $R(\alpha,\textbf{n})$ por sus valores dados y tomando en cuenta que $\lambda^{2}+x^{2}+y^{2}+z^{2}=1$.\\
+Otra representación de la matriz R es la siguiente. Al sustituir $q=(q_{0},q_{1},q_{2},q_{3})$ por:
+\begin{center}
+$q_{0}=cos(\theta/2)$,\\
+$q_{1}=n_{1}\;sen(\theta/2),$\\
+$q_{2}=n_{2}\;sen(\theta/2),$\\
+$q_{1}=n_{3}\;sen(\theta/2),$\\
+\end{center}
+
+\section{Ejemplo}
+Como R es una rotación, $R\in SO(3)\;y \;det(R)=1$.
+Además,\;$RR^{T}=I=RR^{-1}\; y \;R^{T}=R^{-1}\; \in\;SO(3)$.\\
+Por otro lado:\\
+$det[R-I]=det[(R-I)^{T}]=det[R^{T}-I]=det[R^{-1}-I]=det[-R^{-1}(R-1)]=(-1)det[R^{-1}(R-I)]=-det[R^{-1}]det[R-1=-det[R-I]$.\\\\
+Es decir,$det[R-I]=-det[R-I]$, por lo que $det(R-I)=0$.
+Luego, $R-I$ tiene núcleo distinto de cero y por lo tanto, existe $\textbf{n}\;\in R^{3}$ tal que $(R-I)\textbf{n}=0$.De esto se sigue que $R\textbf{n}=\textbf{n}$.\\\\
+Este teorema nos permite ver una secuencia de rotaciones sobre distintos ejes como una sola rotación alrededor de un eje pues cada rotación, al tener asociada una matriz, hace que la secuencia de ellas tenga, a su vez, asociada una sola matriz y usando el \textbf{teorema de Euler} sabemos que tiene un eje de rotación.
+\section{Aplicaciones }
+Los cuaterniones no son únicamente una curiosidad algebraica. Tienen diversas aplicaciones que van desde la teoría de números, en donde pueden utilizarse para probar resultados como el teorema de los cuatro cuadrados dado por Lagrange, que dice que todo número natural n puede expresarse como la suma de cuatro cuadrados perfectos, hasta aplicaciones físicas dentro del electromagnetismo, teoría de la relatividad y mecánica cuántica, entre otras.
+
+Los cuaterniones en física representan rotaciones en el espacio, véase cuaterniones y rotación en el espacio. Además tienen aplicaciones en el electromagnetismo y la mecánica cuántica.
+
+Los cuaterniones se utilizan a menudo en gráficos por computadora (y en el análisis geométrico asociado) para representar la orientación de un objeto en un espacio tridimensional. Las ventajas son: conforman una representación no singular (comparada con, por ejemplo, los ángulos de Euler), más compacta y más rápida que las matrices, en términos computacionales. Debido a lo expuesto, es común el uso de esta notación en el campo de la robótica, debido a que permite en ciertas situaciones, mediante cuaterniones unitarios, abstraer rotaciones y traslaciones con cierta simplicidad, permitiendo la obtención de la orientación relativa entre sistemas de coordenadas.
+
+\section{Conclusiones}
+Al iniciar el proceso de busqueda de esta temática, pronto aparecieron los cuaterniones, que se presenta como la herramienta más estable para la representación de isometrías en el espacio, especialemnte de las rotaciones.
+Además, me quedo mas claro que Gazebo como Blender utilizan internamente en sus códigos fuente los cuaterniones para representacion tridimensionales o al menso, los ofrecen al programador como herramienta para las rotaciones.
+\section{Referencias}
+@article{del2011representacion,
+  title={Simetría Rotacional: Precesión, Cuaterniones Y Rotación en El Espacio, Espín, Momento Angular, Armónicos Esféricos, Era Astrológica, Cuaternión},
+  author={Wikipedia},
+  journal={General Books},
+  pages={30},
+  year={2011}
+
+\bibliographystyle{apalike}
+\bibliography{Biblio}
+
+\end{document}

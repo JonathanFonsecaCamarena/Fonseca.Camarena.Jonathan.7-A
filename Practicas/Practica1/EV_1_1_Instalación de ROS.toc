@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {0.1}Introducci\IeC {\'o}n}{1}{section.0.1}% 
+\contentsline {section}{\numberline {0.2}preparaci\IeC {\'o}n para instalaci\IeC {\'o}n}{1}{section.0.2}% 
+\contentsline {section}{\numberline {0.3}instalaci\IeC {\'o}n}{1}{section.0.3}% 
+\contentsline {section}{\numberline {0.4}declaraci\IeC {\'o}n de entorno de trabajo}{2}{section.0.4}% 
+\contentsline {section}{\numberline {0.5}Comprobaci\IeC {\'o}n de instalaci\IeC {\'o}n}{2}{section.0.5}% 
+\contentsline {section}{\numberline {0.6}Conclusi\IeC {\'o}n}{3}{section.0.6}% 
+\contentsline {section}{\numberline {0.7}Referencia}{3}{section.0.7}% 

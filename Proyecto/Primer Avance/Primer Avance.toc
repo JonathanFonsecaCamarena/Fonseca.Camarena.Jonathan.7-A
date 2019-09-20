@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {0.1}Meta:}{1}{section.0.1}% 
+\contentsline {section}{\numberline {0.2}Objetivos:}{1}{section.0.2}% 
+\contentsline {section}{\numberline {0.3}Justificaci\IeC {\'o}n}{1}{section.0.3}% 
+\contentsline {section}{\numberline {0.4}Tabla de materias}{1}{section.0.4}% 
+\contentsline {section}{\numberline {0.5}Project}{3}{section.0.5}% 
+\contentsline {section}{\numberline {0.6}Referencia}{3}{section.0.6}% 

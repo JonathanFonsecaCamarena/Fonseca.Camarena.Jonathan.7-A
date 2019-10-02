@@ -1,5 +1,0 @@
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {0.1}Introducci\IeC {\'o}n}{1}{section.0.1}% 
-\contentsline {section}{\numberline {0.2}Matriz Jacobiano}{1}{section.0.2}% 
-\contentsline {section}{\numberline {0.3}Operador Jacobiano}{1}{section.0.3}% 
-\contentsline {section}{\numberline {0.4}Conclusi\IeC {\'o}n}{5}{section.0.4}% 

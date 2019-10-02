@@ -1,0 +1,157 @@
+\documentclass[11pt,a4paper,oldfontcommands,oneside]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[dvips]{graphicx}
+\usepackage{xcolor}
+\usepackage{times}
+\usepackage{graphicx}
+
+\usepackage[
+breaklinks=true,colorlinks=true,
+%linkcolor=blue,urlcolor=blue,citecolor=blue,% PDF VIEW
+linkcolor=black,urlcolor=black,citecolor=black,% PRINT
+bookmarks=true,bookmarksopenlevel=2]{hyperref}
+
+\usepackage{geometry}
+% PDF VIEW
+% \geometry{total={210mm,297mm},
+% left=25mm,right=25mm,%
+% bindingoffset=0mm, top=25mm,bottom=25mm}
+% PRINT
+\geometry{total={210mm,297mm},
+left=20mm,right=20mm,
+bindingoffset=10mm, top=25mm,bottom=25mm}
+
+\OnehalfSpacing
+%\linespread{1.3}
+
+%%% CHAPTER'S STYLE
+\chapterstyle{bianchi}
+%\chapterstyle{ger}
+%\chapterstyle{madsen}
+%\chapterstyle{ell}
+%%% STYLE OF SECTIONS, SUBSECTIONS, AND SUBSUBSECTIONS
+\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
+\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
+\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
+
+
+%%% STYLE OF PAGES NUMBERING
+%\pagestyle{companion}\nouppercaseheads 
+%\pagestyle{headings}
+%\pagestyle{Ruled}
+\pagestyle{plain}
+\makepagestyle{plain}
+\makeevenfoot{plain}{\thepage}{}{}
+\makeoddfoot{plain}{}{}{\thepage}
+\makeevenhead{plain}{}{}{}
+\makeoddhead{plain}{}{}{}
+
+
+\maxsecnumdepth{subsection} % chapters, sections, and subsections are numbered
+\maxtocdepth{subsection} % chapters, sections, and subsections are in the Table of Contents
+
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\begin{document}
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%   TITLEPAGE
+%
+%   due to variety of titlepage schemes it is probably better to make titlepage manually
+%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+\thispagestyle{empty}
+
+{%%%
+\sffamily
+\centering
+\Large
+
+~\vspace{\fill}
+\includegraphics[scale=.5]{marcos.png}
+{\huge 
+ROBOT MANIPULADOR
+}
+\vspace{2.5cm}
+
+{\LARGE
+Marcos Manzo Torres
+}
+
+\vspace{3.5cm}
+
+Universidad Politécnica de la Zona Metropolitana de Guadalajara
+
+\vspace{3.5cm}
+
+Profesor: Carlos Enrique Morán Garabito
+
+\vspace{\fill}
+
+Fecha de entrega, 17 de septiembre del 2019
+
+%%%
+}%%%
+
+\vspace{4.5cm}
+
+
+
+
+\tableofcontents*
+
+\clearpage
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\chapter{introducción}
+
+Los robots manipuladores o robots industriales, conocidos así porque inicialmente fueron usados masivamente en la industria, fueron los encargados de inaugurar la era de los robots en los años 1960, con la herencia adquirida de los primeros teleoperadores. Por ello, es el área de la robótica donde la investigación está más avanzada. El área más interesante, y donde sí que se investiga de manera importante es en la búsqueda de novedosas aplicaciones para los robots manipuladores, como es el caso de los robots quirúrgicos, los cuales presentan un gran auge en estos momentos. En este caso, la investigación no está centrada en el robot sino en adaptar éste a las necesidades propias de la aplicación. 
+
+\section{manipulabilidad}
+La manipulabilidad se puede interpretar como la eficacia con la cual el brazo transmite fuerza y velocidad a su órgano terminal. Considerando la conservación de energía, las direcciones preferentes de fuerza serán las menos aptas para desarrollar altas velocidades y viceversa. 
+La manipulabilidad se representa como un elipsoide para cada configuración del brazo, donde la distancia del centro del elipsoide a la frontera es proporcional a la facilidad de transmisión de fuerza o velocidad en esa dirección. 
+
+\begin{figure}[h]
+\includegraphics[scale=1.2]{link30.png}
+\end{figure}
+
+\section{movimiento}
+El movimiento de cada articulación puede ser de desplazamiento, de giro o de una combinación de ambos. De este modo son posibles los cinco tipos diferentes de articulaciones, con sus diferentes grados de libertad, que se muestran a continuación: (1) Rotación. (2) Prismática. (3) Cilíndrica. (4) Planar. (5) Esférica. Los grados de libertad son el número de movimientos independientes que puede realizar cada articulación con respecto a la anterior. El número de grados de libertad de un robot viene dado por la suma de los grados de libertad de cada una de sus articulaciones. El empleo de diferentes combinaciones de articulaciones en un robot, da lugar a diferentes configuraciones con características a tener en cuenta tanto en el diseño y construcción del robot como en su aplicación.
+\begin{figure}[h]
+\includegraphics[scale=1.2]{link31.png}
+\end{figure}
+
+\section{uniones o joints}
+Existen dos uniones posibles: la prismática y la revoluta. A su vez un manipulador puede ser de cadena abierta, si está formado por una sucesión lineal de eslabones, o en el caso contrario de cadena cerrada. El análisis de un robot manipulador incluye la descripción del movimiento y de las fuerzas que intervienen en este, así mismo se busca predecir y controlar el comportamiento del sistema. El estudio del movimiento puede dividirse en cinemática y dinámica. Por un lado, la cinemática atiende únicamente al movimiento, es decir al desplazamiento, velocidad y aceleración, entre los eslabones y en las articulaciones; a su vez, la dinámica toma en cuenta las fuerzas que intervienen en el movimiento.
+\begin{figure}[h]
+\includegraphics[scale=.8]{link32.png}
+\end{figure}
+\section{posición}
+: La posición de todas las partes del sistema puede ser descrita en todo momento a partir de las variables articulares del sistema. Esto plantea un problema inicial, ya que normalmente la tarea a realizar estará referida en coordenadas cartesianas del espacio de tarea, y no con respecto a las variables articulares del sistema. El análisis cinemático se divide en cinemática directa e inversa. La cinemática directa se encarga de calcular la posición, orientación, velocidad y aceleración del efector en el espacio de tarea cuando son conocidos los valores articulares. La cinemática inversa se refiere al caso contrario, en el cual las variables articulares son calculadas a partir de los valores deseados del efector final en el espacio de tarea.
+
+\begin{figure}[h]
+\includegraphics[scale=.7]{link33.png}
+\end{figure}
+\vspace{1.5cm}
+
+
+\section{cinemática y dinámica de un robot}
+Hay que mencionar que la cinemática inversa y directa proponen transformaciones entre dos espacios, el espacio articular y el espacio de tarea. El espacio de tarea a lo más seis dimensiones. El espacio articular es n-dimensional, poseé tantas dimensiones como articulaciones tenga el manipulador; de ahí que mientras más articulaciones posea un manipulador se incremente la complejidad de su análisis y la obtención de las ecuaciones de cinemática inversa. Algunos aspectos del análisis cinemático incluyen el manejo de redundancia en el sistema, referida como muchas posibilidades para efectuar el mismo movimiento, evasión de colisiones y evasión de singularidades. Una vez que todas las posiciones, velocidades y aceleraciones han sido calculadas usando la cinemática, se usa la dinámica para estudiar el efecto de las fuerzas presentes en el sistema al ejecutar estos movimientos. La dinámica directa se refiere al cálculo de aceleraciones en el robot una vez que han aplicado fuerzas conocidas en las articulaciones. La dinámica inversa se refiere al cálculo de las fuerzas en los actuadores necesarias para llevar a cabo los movimientos deseados. Esta información es usada para implementar un esquema de control al robot o para elegir actuadores.
+\begin{figure}[h]
+\includegraphics[scale=1.2]{link34.png}
+\end{figure}
+\section{aplicaciones}
+Los robots manipuladores tienen su principal foco de trabajo en la industria, automatizando los procesos de producción o almacenaje. Generalmente no trabajan de forma independiente sino en conjunto con otras máquinas herramientas formando células de trabajo. Se enumeran a continuación algunos ejemplos: (1) Operaciones de procesamiento, como soldadura, pintura, etc. Este tipo de robots son muy comunes en la industria de los automóviles. (2) Operaciones de ensamblaje, donde el trabajo repetitivo facilita el uso de este tipo de robots. (3) Operaciones de empaque, en tarimas o pallets, agilizando el proceso y manejando grandes pesos. (4) Otro tipo de operaciones como pueden ser remachados, estampados, corte por chorro de agua, sistemas de medición, etc.
+\vspace{1.5cm}\cite{de2006robotica}
+\cite{baturone2005robotica}
+
+\bibliographystyle{unsrt}
+\bibliography{torres}
+
+
+\end{document}
+

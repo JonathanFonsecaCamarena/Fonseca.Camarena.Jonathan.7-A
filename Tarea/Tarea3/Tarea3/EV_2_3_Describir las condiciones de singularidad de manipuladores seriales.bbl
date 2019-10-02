@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{angeles1992kinematic}
+Jorge Angeles and Carlos~S L{\'o}pez-Caj{\'u}n.
+\newblock Kinematic isotropy and the conditioning index of serial robotic
+  manipulators.
+\newblock {\em The International Journal of Robotics Research}, 11(6):560--571,
+  1992.
+
+\bibitem{baturone2005robotica}
+An{\'\i}bal~Ollero Baturone.
+\newblock {\em Rob{\'o}tica: manipuladores y robots m{\'o}viles}.
+\newblock Marcombo, 2005.
+
+\bibitem{hayes2002singular}
+MJD Hayes, ML~Husty, and PJ~Zsombor-Murray.
+\newblock Singular configurations of wrist-partitioned 6r serial robots: A
+  geometric perspective for users.
+\newblock {\em Transactions of the Canadian Society for Mechanical
+  Engineering}, 26(1):41--55, 2002.
+
+\end{thebibliography}

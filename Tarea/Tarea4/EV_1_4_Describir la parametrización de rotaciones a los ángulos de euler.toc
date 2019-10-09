@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {0.1}Introducci\IeC {\'o}n}{1}% 
+\contentsline {section}{\numberline {0.2}\IeC {\'A}ngulos de Euler}{2}% 
+\contentsline {section}{\numberline {0.3}Posici\IeC {\'o}n y matriz de rotaci\IeC {\'o}n}{3}% 
+\contentsline {section}{\numberline {0.4}Precisi\IeC {\'o}n}{3}% 
+\contentsline {section}{\numberline {0.5}Nutaci\IeC {\'o}n}{3}% 
+\contentsline {section}{\numberline {0.6}Rotaci\IeC {\'o}n propia}{4}% 
+\contentsline {section}{\numberline {0.7}Matriz de rotaci\IeC {\'o}n}{5}% 

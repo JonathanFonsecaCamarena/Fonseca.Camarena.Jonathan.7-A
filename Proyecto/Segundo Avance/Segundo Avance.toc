@@ -1,0 +1,12 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {0.1}Meta:}{1}{section.0.1}% 
+\contentsline {section}{\numberline {0.2}Objetivos:}{1}{section.0.2}% 
+\contentsline {section}{\numberline {0.3}Justificaci\IeC {\'o}n}{1}{section.0.3}% 
+\contentsline {section}{\numberline {0.4}Tabla de materias}{2}{section.0.4}% 
+\contentsline {section}{\numberline {0.5}Project}{2}{section.0.5}% 
+\contentsline {section}{\numberline {0.6}Proposici\IeC {\'o}n del an\IeC {\'a}lisis finito}{3}{section.0.6}% 
+\contentsline {section}{\numberline {0.7}Material seleccionado}{3}{section.0.7}% 
+\contentsline {section}{\numberline {0.8}Cronograma de gastos de elaboraci\IeC {\'o}n de robot esf\IeC {\'e}rico}{4}{section.0.8}% 
+\contentsline {section}{\numberline {0.9}Avances en inventor}{4}{section.0.9}% 
+\contentsline {section}{\numberline {0.10}Conclusi\IeC {\'o}nes}{5}{section.0.10}% 
+\contentsline {section}{\numberline {0.11}Referencia}{6}{section.0.11}% 

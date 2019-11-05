@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {0.1}Manipulador paralelo:}{1}% 
+\contentsline {section}{\numberline {0.2}Aplicaciones iniciales}{2}% 
+\contentsline {section}{\numberline {0.3}Aplicaciones de los manipuladores paralelos}{4}% 
+\contentsline {section}{\numberline {0.4}Descripci\IeC {\'o}n geom\IeC {\'e}trica}{7}% 
+\contentsline {section}{\numberline {0.5}Concluciones}{7}% 
+\contentsline {section}{\numberline {0.6}Bibliography}{8}% 
